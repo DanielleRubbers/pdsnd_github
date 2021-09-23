@@ -7,7 +7,7 @@
 BikeShare Git Project
 
 ### Description
-A program that analyses U.S. bikeshare data
+This project makes use of Python to explore data related to bike share systems. The user is able to submit raw input which influences what data file is used and how the data is processed. The program imports the relevant file and answers interesting questions about it by computing descriptive statistics. 
 
 ### Files used
 bikeshare_2.py
