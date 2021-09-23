@@ -201,11 +201,11 @@ def print_raw_data(df):
     
     while end<=data_length:
         
-        view_data = input("Would you like to view 5 rows of trip data? Enter yes or no")
+        view_data = input("Would you like to view 5 rows of trip data? Enter yes or no").lower()
         
         
         if view_data != 'yes' and view_data != 'no':
-            view_data = input("Would you like to view 5 rows of trip data? Please make sure to only enter yes or no")
+            view_data = input("Would you like to view 5 rows of trip data? Please make sure to only enter yes or no").lower()
             
         
         elif view_data == 'yes':
@@ -236,7 +236,7 @@ def main():
         user_stats(df)
         print_raw_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
         if restart.lower() != 'yes':
             break
 
