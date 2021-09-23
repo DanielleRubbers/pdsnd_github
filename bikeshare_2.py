@@ -195,8 +195,8 @@ def print_raw_data(df):
     """Prints Raw Data for bikeshare users."""
     
     data_length = len(df)
-    end = 5
-    start=0
+    end = 10
+    start = 0
     
     
     while end<=data_length:
