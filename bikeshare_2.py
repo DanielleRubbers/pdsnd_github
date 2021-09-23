@@ -198,28 +198,28 @@ def print_raw_data(df):
     end = 5
     start=0
     
-    
+    #while the last requested column is less than or equal to the number of rows in the dataframe
     while end<=data_length:
         
         view_data = input("Would you like to view 5 rows of trip data? Enter yes or no")
         
-        
+        #make sure response is valid
         if view_data != 'yes' and view_data != 'no':
             view_data = input("Would you like to view 5 rows of trip data? Please make sure to only enter yes or no")
             
-        
+        #if the user wants to see data, print the rows between the start row number and end row number-1
         elif view_data == 'yes':
             print(df.iloc[start:end])
             start+=5
             
-            
+            #in case the number of rows in total isn't divisible by 5, set the end value to the number of the last row
             if (data_length-start)<5:
                 end=data_length
-            
+            #in all other cases, just increment the value by 5
             else:
                 end+=5
                 
-                 
+        #if no is selected break out of the loop          
         else:
             break
         
